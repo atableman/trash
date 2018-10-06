@@ -50,6 +50,10 @@ def set_view(view_id, window, ignore_existing, single_pane):
 
     if not view:
         view = window.new_file()
+        print("-000000000000000000000000000000")
+        print("-000000000000000000000000000000")
+        print(view)
+        
         view.settings().add_on_change('color_scheme', lambda: set_proper_scheme(view))
         #view.set_syntax_file('Packages/Outline/outline.hidden-tmLanguage')
         view.set_syntax_file('outline.hidden-tmLanguage')
