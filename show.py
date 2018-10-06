@@ -53,7 +53,7 @@ def set_view(view_id, window, ignore_existing, single_pane):
         print("-000000000000000000000000000000")
         print("-000000000000000000000000000000")
         print(view)
-        
+
         view.settings().add_on_change('color_scheme', lambda: set_proper_scheme(view))
         #view.set_syntax_file('Packages/Outline/outline.hidden-tmLanguage')
         view.set_syntax_file('outline.hidden-tmLanguage')
@@ -62,7 +62,10 @@ def set_view(view_id, window, ignore_existing, single_pane):
         view.set_scratch(True)
         reset_sels = True
     else:
-        reset_sels = path != view.settings().get('outline_path', '')
+        print("-----")
+        print(view.settings().get('outline_path', ''))
+        #reset_sels = path != view.settings().get('outline_path', '')
+        reset_sels = True
 
     return (view, reset_sels)
 
