@@ -55,8 +55,8 @@ def set_view(view_id, window, ignore_existing, single_pane):
         print(view)
 
         view.settings().add_on_change('color_scheme', lambda: set_proper_scheme(view))
-        #view.set_syntax_file('Packages/Outline/outline.hidden-tmLanguage')
-        view.set_syntax_file('outline.hidden-tmLanguage')
+        view.set_syntax_file('Packages/Outline/outline.hidden-tmLanguage')
+        #view.set_syntax_file('outline.hidden-tmLanguage')
         print("----------> HI ")
         print(os.getcwd())
         view.set_scratch(True)
