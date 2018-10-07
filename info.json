@@ -1,0 +1,15 @@
+{
+  "schema_version": "3.0.0",
+      "packages": [
+        {
+          "name": "Outline+",
+          "details": "https://github.com/UCLA-Plasma-Simulation-Group/tools_sublimetext_outliner",
+          "releases": [
+              {
+                "sublime_text": ">=3000",
+                "tags": true
+              }
+          ]
+        }
+ ]
+}
