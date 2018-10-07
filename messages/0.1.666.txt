@@ -1,4 +1,4 @@
-0.1.2.1
+0.1.666
 
 * Added automatic color-scheme selection based on text being outlined if the user does not expliticlyh specify a desired color_scheme.
 * Added bi-directional updating of the highlighted row in the outline so that the relevent row is updated as you move through the source code.
