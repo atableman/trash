@@ -86,7 +86,8 @@ class OutlineEventHandler(EventListener):
 				sym_view.settings().set('current_file', view.file_name())
 			
 		symlist = view.get_symbols()
-		
+		if sym_view is not None:
+			sym_view.settings().set('color_scheme', view.settings().get('color_scheme'))
 		refresh_sym_view(sym_view, symlist, view.file_name())
 		self.update_outline_selection_from_text_section(view, sym_view, sym_group, fb_view, fb_group)
 
@@ -204,7 +205,7 @@ class OutlineEventHandler(EventListener):
 			# Note here is the only place that differs from on_activate_view
 			if sym_view.settings().get('current_file') != view.file_name():
 				sym_view.settings().set('current_file', view.file_name())
-			
+		
 		symlist = view.get_symbols()
 
 		refresh_sym_view(sym_view, symlist, view.file_name())

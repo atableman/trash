@@ -66,11 +66,25 @@
   // appropriate repository https://github.com/guillermooo/Vintageous/issues
   "__vi_external_disable": true,
 
+
+  //
+  // Color Scheme:
+  //    If you do not specify (or comment out) the 'color_scheme' setting then
+  //    this plugin will use the 'color_scheme' of the text it is examining. This
+  //    is the default behavior. If you wish to have this plugin always use a fixed
+  //    'color_scheme' then specify the name of the scheme.
+  //
+  //    This plugin includes one color scheme, if you wish to use it, uncomment out the following line:
+  //"color_scheme": "Packages/Outline/outline-Dark.hidden-tmTheme",
+  //
+  //    If you wish to use another scheme, such as one from the popular 'Boxy' plugin, then here's an example
+  //    of selecting Boxy's 'tomarrow' theme:
+  //"color_scheme": "Packages/Boxy Theme/schemes/Boxy Tomorrow.tmTheme",
+  
   // The rest of these settings are normal sublime settings to
   // make FileBrowser views look more like a file browser than an editor
   // This plugin does not change font and font size, but it's
   // highly recommended to customize them in your user files.
-  "color_scheme": "outline.hidden-tmTheme",
   "line_numbers": false,
   "word_wrap": false,
   "spell_check": false,

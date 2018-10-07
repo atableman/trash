@@ -1,23 +1,8 @@
 ## Outline for Sublime Text 3
 
-### Overview
+## Forked and updated by Adam Tableman a long time ago for UCLA/IST use (especially for Fortran, if the SublimeFortran plugin that I forked/tweaked is also installed.. they work together. )
 
-Inspired by [FileBrowser](https://github.com/aziz/SublimeFileBrowser), this package shows the outline of your document or class/function name list of your code in a sidebar-style tab.
-
-![Screenshot](screenshot.png?raw=true "Screenshot")
-
-### Installation
-
-#### Install via Package Control
-
-This package is available on [Package Control](https://packagecontrol.io/). Search for `Outline`.
-
-#### Manual installation
-
-1. Clone or download this repository to your hard drive using the green `Clone or download` button
-2. Rename the cloned or extracted folder to `Outline`. Make sure `outline.py` is at the root of the `Outline` folder.
-3. Move the `Outline` folder to your Sublime Text's `Packages` folder. To find the `Packages` folder, click menu `Preferences` > `Browse Packages`.
-4. Restart Sublime Text, and press `Ctrl + Shift + P` to select your preferred layout (`Browse Mode`)
+See [original repository](https://github.com/warmdev/SublimeOutline) for the base code on which this code is based/forked.
 
 ### Default layout
 

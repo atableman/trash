@@ -68,9 +68,15 @@ def set_proper_scheme(view):
     else:
         outline_settings = sublime.load_settings('outline.sublime-settings')
 
+    # If a color-scheme was not explicitly specified in the'outline.sublime-settings' file or by the User, then
+    #   we will allow the color scheme to be changed (by just returning and not editing any values.. 
+    #   recall that is is a onChange callback)
+    if outline_settings.get('color_scheme', '').strip() == '':
+      return
+    # If the scheme is unchanged, not need to update the value.
     if view.settings().get('color_scheme') == outline_settings.get('color_scheme'):
-        return
-
+      return
+    # Otherwise, undo the update and force the scheme to the one the User specified.
     view.settings().set('color_scheme', outline_settings.get('color_scheme'))
 
 

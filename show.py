@@ -50,22 +50,18 @@ def set_view(view_id, window, ignore_existing, single_pane):
 
     if not view:
         view = window.new_file()
-        print("-000000000000000000000000000000")
-        print("-000000000000000000000000000000")
-        print(view)
-
         view.settings().add_on_change('color_scheme', lambda: set_proper_scheme(view))
         view.set_syntax_file('Packages/Outline/outline.hidden-tmLanguage')
-        #view.set_syntax_file('outline.hidden-tmLanguage')
-        print("----------> HI ")
-        print(os.getcwd())
         view.set_scratch(True)
         reset_sels = True
+    # Adam: This is not a valid statement ('path is not defined')
+    #       I assume 'path' was meant to point to the .path property of a'outlineBaseCommand' class
+    #       in 'common.py' but this no longer looks used.
+    #else:
+    #    reset_sels = path != view.settings().get('outline_path', '')
     else:
-        print("-----")
-        print(view.settings().get('outline_path', ''))
-        #reset_sels = path != view.settings().get('outline_path', '')
-        reset_sels = True
+      reset_sels = False
+
 
     return (view, reset_sels)
 
@@ -163,7 +159,6 @@ def get_sidebar_views_groups(view):
             fb_view = v
             if fb_view != None:
                 fb_group, j = window.get_view_index(fb_view)
-
     return (sym_view, sym_group, fb_view, fb_group)
 
 def get_sidebar_status(view):
