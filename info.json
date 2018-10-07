@@ -3,7 +3,7 @@
       "packages": [
         {
           "name": "Outline+",
-          "details": "https://github.com/UCLA-Plasma-Simulation-Group/tools_sublimetext_outliner",
+          "details": "https://github.com/atableman/trash",
           "releases": [
               {
                 "sublime_text": ">=3000",
