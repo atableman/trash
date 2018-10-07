@@ -75,7 +75,7 @@
   //    'color_scheme' then specify the name of the scheme.
   //
   //    This plugin includes one color scheme, if you wish to use it, uncomment out the following line:
-  //"color_scheme": "Packages/Outline/outline-Dark.hidden-tmTheme",
+  //"color_scheme": "Packages/Outline+/outline-Dark.hidden-tmTheme",
   //
   //    If you wish to use another scheme, such as one from the popular 'Boxy' plugin, then here's an example
   //    of selecting Boxy's 'tomarrow' theme:
